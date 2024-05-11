@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GDP due to service Predictor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: 20px;
+      padding-top: 20px;
+      padding: 2rem;
+      border: 2px solid black;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      text-decoration: underline;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input[type="number"] {
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 1opx;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      flex-basis: 100%;
+      padding: 10px;
+      background-color: blueviolet;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #result {
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>GDP due to service Predictor</h1>
+  <form id="gdp-form">
+    <label for="agriculture">Agriculture:</label><br>
+    <input type="number" id="agriculture" name="agriculture" step="0.01"><br>
+    <label for="rural-buildup">Rural Buildup:</label><br>
+    <input type="number" id="rural-buildup" name="rural-buildup" step="0.01"><br>
+    <label for="urban-buildup">Urban Buildup:</label><br>
+    <input type="number" id="urban-buildup" name="urban-buildup" step="0.01"><br>
+    <input type="submit" value="Predictor  GDP">
+  </form>
+  <div id="result"></div>
+</body>
+<script>
+  document.getElementById('gdp-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var agriculture = parseFloat(document.getElementById('agriculture').value);
+    var ruralBuildup = parseFloat(document.getElementById('rural-buildup').value);
+    var urbanBuildup = parseFloat(document.getElementById('urban-buildup').value);
+    var gdp = agriculture + ruralBuildup + urbanBuildup;
+    document.getElementById('result').innerText = 'GDP: ' + gdp;
+  });
+</script>
+
+</html>

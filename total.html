@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Add a container div for the iframe -->
+<div id="streamlit-container"></div>
+
+<!-- Add a button that triggers the loading of the Streamlit application -->
+<button id="load-streamlit">Calculate</button>
+
+
+</body>
+<script>
+    // Add an event listener to the button
+    document.getElementById("load-streamlit").addEventListener("click", function() {
+        // Create an iframe element
+        var iframe = document.createElement("iframe");
+        // Set the src attribute to the URL of your Streamlit application
+        iframe.src = "http://localhost:8501/";
+        // Set the width and height attributes
+        iframe.width = "800";
+        iframe.height = "600";
+        // Append the iframe to the container div
+        document.getElementById("streamlit-container").appendChild(iframe);
+    });
+</script>
+</html>

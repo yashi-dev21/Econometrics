@@ -1,0 +1,90 @@
+body {
+  background: linear-gradient(to right, #008380, #00b4db);
+  color: #514864;
+}
+
+.rounded-1g {
+  border-radius: 1rem !important;
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+.custom-seperator {
+  width: 5rem;
+  height: 6px;
+  border-radius: 1rem;
+}
+
+.text-uppercase {
+  letter-spacing: 0.2em;
+}
+.container {
+  padding: 0 20px;
+}
+ 
+.row.text-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-lg-4.mb-5.mb-lg-0 {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 40px;
+  flex-basis: 25%; /* instead of width: 25% */
+  height: 500px;
+  border-radius: 20px;
+}
+:root {
+  --primary-color: #00830b;
+  --secondary-color: #0d9cbc;
+  --text-color: #514864;
+  --border-radius: 1rem;
+  --font-size-small: 0.9rem;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--text-color);
+}
+
+.rounded {
+  border-radius: var(--border-radius);
+}
+
+.text-small {
+  font-size: var(--font-size-small);
+}
+
+.seperator {
+  width: 5rem;
+  height: 6px;
+  border-radius: var(--border-radius);
+}
+
+.text-uppercase {
+  letter-spacing: 0.2em;
+  text-decoration: underline;
+}
+
+ul{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+li{
+    font-size:20px;
+}
+.btn-center{
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    margin: 30px auto;
+    padding: 10px 20px;
+}

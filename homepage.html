@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=Frank+Ruhl+Libre:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+<body>
+    <nav id="top" class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="#">Econometrics</a>
+            </div>
+            <ul>
+                <li><a href="#top">HOME</a></li>
+                <li><a href="#text">ABOUT US</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="/pricing.html">PRICING</a></li>
+                <li><a href="/contact.html">CONTACT US</a></li>
+                <button><a href="/login.html">Signup</a></button>
+                <button><a href="/login.html">Login</a></button>
+            </ul>
+        </div>
+    </nav>
+
+    <img src="/images/Econometrics.png" style="width: 100%; margin: auto; border-radius: 20px; padding-top: 5px;"
+        alt="img">
+    <div class="conatiner-about">
+        <div class="text" id="text">
+            <h3><b>About</b></h3>
+            <P>This project seeks to investigate the complex correlation between the Land Use and Land Cover (LULC)
+                categories of each Indian state and its associated Gross Domestic Product (GDP), considering factors
+                such as total food grain production, agricultural output, net irrigated area, and industrial activities
+                across several years.</P>
+            <p>At Econometrics You will recognize the critical need to optimize resource allocation for better economic
+                outcomes while promoting sustainable development and smart urban planning.
+                Join us on this journey as we explore the intersection of land use, economic development, and
+                sustainable practices in India.</p>
+            <p><b>Vision:</b>
+                To create a sustainable future by unraveling the intricate relationship between land use and economic
+                growth, shaping smarter policies and practices for India's development.</p>
+        </div>
+        <img src="images\lulc.png" alt="image">
+    </div>
+
+    <div class="calculation">
+        <div class="calc">
+            <H2 class="total">PREDICT TOTAL GDP</H2>
+            <p>Gross Domestic Product (GDP) is the monetary value of all goods and services produced within a country's
+                borders over a given period, usually annually or quarterly. It's calculated by adding up consumer
+                spending, investments, government spending, and net exports (exports minus imports). GDP serves as a key
+                indicator of a country's economic health and growth, influencing policy decisions and providing insights
+                into overall economic performance.</p>
+            <button><a href="/ttl-GDP.html">Calculate</a></button>
+        </div>
+        <div class="calc">
+            <H2 class="total">PREDICT GDP DUE TO AGRICULTURE</H2>
+            <p>To calculate the GDP contribution from agriculture, add the value of all agricultural goods and services
+                produced within a country. This includes the value of crops, livestock, forestry, and fisheries.
+                Additionally, consider the value added by processing and marketing agricultural products. Subtract any
+                costs incurred in production. The resulting figure reflects the contribution of agriculture to GDP,
+                providing insight into the agricultural sector's economic significance.</p>
+            <button><a href="/GDP-agri.html">Calculate</a></button>
+        </div>
+        <div class="calc">
+            <H2 class="total">PREDICT GDP DUE TO INDUSTRY</H2>
+            <p>To calculate the GDP contribution from the industrial sector, sum up the value of goods produced by
+                industries like manufacturing, mining, construction, and utilities. Include the value added at each
+                stage of production, from raw materials to finished goods. Subtract any costs incurred in production,
+                including intermediate goods and services. The resulting figure represents the industrial sector's
+                contribution to GDP, reflecting its importance in the economy.</p>
+            <button><a href="/GDP-indu.html">Calculate</a></button>
+        </div>
+        <div class="calc" id="help">
+            <H2 class="total">PREDICT GDP DUE TO SERVICES</H2>
+            <p>To calculate the GDP contribution from the services sector, sum up the value of all services provided
+                within a country. This includes professional services, financial services, transportation, retail,
+                healthcare, education, and hospitality. Consider the fees, charges, and payments for services rendered.
+                Subtract any costs associated with service provision. The resulting figure represents the contribution
+                of the services sector to GDP, reflecting its role as a major driver of economic activity.</p>
+            <button><a href="/GDP-ser.html">Calculate</a></button>
+        </div>
+    </div>
+    <div class="social-1">
+
+        <div>2024 @ Econometrics</div>
+
+        <div>
+            <a class="social-icon" href="https://twitter.com/" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://www.instagram.com" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://www.linkedin.com/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://www.youtube.com/" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://google.com/" target="_blank">
+                <ion-icon name="logo-google"></ion-icon>
+            </a>
+        </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

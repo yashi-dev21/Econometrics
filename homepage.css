@@ -1,0 +1,79 @@
+*{
+    text-decoration: none;
+}
+.navbar{
+    background-image:linear-gradient( rgb(150, 0, 250), rgb(156, 15, 171)); font-family: 'Gill Sans MT', Calibri, sans-serif; padding: 0px 15px;
+}
+.navdiv{
+    display: flex; align-items: center; justify-content: space-between;
+}
+.logo a{
+    font-size: 30px; font-weight: bold; color: white; text-transform: uppercase; letter-spacing: 1.5px; cursor: pointer;
+}
+li{
+    list-style: none; display: inline-block; 
+}
+ul{
+    float: right;
+}
+nav li a:hover{
+    color: rgb(150, 0, 250); background-color: #fff; border-radius: 12px;
+}
+li a{
+    color: white; font-size: 18px;  margin-right: 20px; padding: 4px;
+} 
+button{
+    background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+}
+button a{
+    color: white; font-weight: bold; font-size: 15px;
+}
+.conatiner-about{
+    display: flex; align-items: center; justify-content: center; height: 350px; background-color: rgb(238, 245, 251); border-radius: 10px;
+}
+.text h3{
+    font-size: x-large; font-family: "Adamina", serif; font-weight: 400; font-style: normal;
+}
+.text p{
+    padding-right: 20px; font-size: large; font-family: "Adamina", serif; font-weight: 400; font-style: normal;
+}
+.total{
+    background-color: rgb(238, 245, 251); font-family: 'Times New Roman', Times, serif; padding: 10px;
+}
+.calculation{
+    margin: 10px; padding: 10px;
+}
+.calc{
+    margin: 10px; border: 2px solid blueviolet; padding: 5px;border-radius: 10px; background-color: rgb(188, 220, 209);
+}
+.calc p{
+    text-align: center; font-family: "Adamina", serif; font-weight: 400; font-style: normal;
+}
+.conatiner-about img {
+    height: 350px;
+}
+.social-icon {
+    color: #ffffff;
+    background-color: #2B2D3D;
+    transition: color 0.2s;
+    text-decoration: none;
+    margin: 10px;
+    border: 0.5px solid#ffffff;
+    padding: 8px 4px 2px 8px;
+    border-radius: 10px;
+}
+
+.social-icon:hover {
+    color: #333333;
+    text-align: center;
+    align-items: center;
+}
+
+.social-1{
+    display: flex;
+    justify-content:space-between;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    padding: 60px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
